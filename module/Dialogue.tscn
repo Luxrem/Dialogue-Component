@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://ccqopcx6txtu3"]
+
+[ext_resource type="Script" uid="uid://cbc0v2w7c6sct" path="res://dialogue.gd" id="1_tgtc2"]
+
+[node name="DialogueManager" type="Node" unique_id=264671048]
+script = ExtResource("1_tgtc2")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=580377076]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1784900062]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -50.0
+offset_right = 576.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=227860413]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Next"
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=624792543]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1323963014]
+custom_minimum_size = Vector2(1152, 100)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -50.0
+offset_right = 576.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TypeTimer" type="Timer" parent="CanvasLayer" unique_id=575542917]
+wait_time = 0.04

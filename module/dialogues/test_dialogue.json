@@ -1,0 +1,22 @@
+{ 
+	"dialogue_start": {
+		"text": "Hello", 
+		"bbcode": "Hello", 
+		"goto": "intro_1"
+		},
+	"intro_1": {
+		"text": "Are you new here?", 
+		"bbcode": "Are you new here?", 
+		"choices": [{"text": "choice_1", "goto": "answer_1"},
+					{"text": "No", "goto": "answer_2"}]
+		},
+	"answer_1": {
+		"text": "Welcome newcomer",
+		"bbcode": "[rainbow][wave]Welcome newcomer[/wave][/rainbow]", 
+		"goto": "dialogue_end"
+	},
+	"answer_2": {
+		"text": "Wecome back then", 
+		"bbcode": "[wave]Wecome back then[/wave]", 
+		"goto": "dialogue_end"}
+}

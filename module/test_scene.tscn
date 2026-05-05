@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://l61vlykss2ro"]
+
+[ext_resource type="Script" uid="uid://dwqnuntj51ap1" path="res://test_scene.gd" id="1_ia1lp"]
+[ext_resource type="PackedScene" uid="uid://ccqopcx6txtu3" path="res://Dialogue.tscn" id="2_sasra"]
+
+[node name="TestScene" type="Control" unique_id=174198059]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ia1lp")
+
+[node name="DialogueChoices" type="CanvasLayer" parent="." unique_id=1507425764]
+
+[node name="dialogue_1" type="Button" parent="DialogueChoices" unique_id=1353180051]
+custom_minimum_size = Vector2(476, 0)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+offset_right = 476.0
+grow_vertical = 0
+text = "dialogue_1"
+
+[node name="dialogue_2" type="Button" parent="DialogueChoices" unique_id=220811721]
+custom_minimum_size = Vector2(476, 0)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -476.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "dialogue_2"
+
+[node name="DialogueManager" parent="." unique_id=264671048 instance=ExtResource("2_sasra")]

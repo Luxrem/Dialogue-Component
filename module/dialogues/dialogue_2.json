@@ -1,0 +1,30 @@
+{ 
+	"dialogue_start": {
+		"text": "Rats make me crazy", 
+		"bbcode": "Rats make me crazy", "goto": "intro_1"
+		},
+	"intro_1": {
+		"text": "...", 
+		"bbcode": "...", 
+		"choices": [
+			{"text": "Are you crazy?", "goto": "rats_1"},
+			{"text": "Im leaving", "goto": "dialogue_end"}
+			]
+		},
+	"rats_1": {
+		"text": "Crazy?!?", 
+		"bbcode": "Crazy?!?", 
+		"goto": "rats_2"
+		},
+	"rats_2": {
+		"text": "I was crazy once",
+		"bbcode": "I was [shake rate=10 level=10]crazy[/shake] once",
+		"goto": "rats_3"
+		},
+	"rats_3": {
+		"text": "They locked me in a room.", 
+		"bbcode": "They locked me in a room.", "goto": 
+		"rats_4"},
+	"rats_4": {"text": "A rubber room... WITH RATS", "bbcode": "A [wave]rubber room[/wave]... [color=#ff0000]WITH RATS[/color]", "goto": "rats_5"},
+	"rats_5": {"text": "And rats make me crazy", "bbcode": "And rats make me [shake rate=30 level=30]crazy[/shake]", "goto": "intro_1"},
+}
